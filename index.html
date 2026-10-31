@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Student Task Manager</h1>
+            <p>Organize your studies. Complete your goals.</p>
+        </header>
+
+        <div class="stats">
+            <div class="stat-card">
+                <h2 id="total">0</h2>
+                <p>Total Tasks</p>
+            </div>
+            <div class="stat-card">
+                <h2 id="completed">0</h2>
+                <p>Completed</p>
+            </div>
+            <div class="stat-card">
+                <h2 id="pending">0</h2>
+                <p>Pending</p>
+            </div>
+        </div>
+
+        <div class="task-box">
+            <h2>Add New Task</h2>
+
+            <div class="input-area">
+                <input type="text" id="taskInput"
+                    placeholder="Enter your task...">
+                <button onclick="addTask()">Add Task</button>
+            </div>
+
+            <h2 class="list-title">My Tasks</h2>
+            <ul id="taskList"></ul>
+        </div>
+
+        <footer>
+            <p>Student Task Manager | Cloud Computing Project</p>
+            <p>Hosted on Render</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
